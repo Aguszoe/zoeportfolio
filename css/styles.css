@@ -89,7 +89,6 @@ body {
 
 .flex-work:hover {
 
-    height: 300px;
 }
 
 img {
@@ -154,10 +153,7 @@ word-spacing: 18rem;
 font-family: "Public Sans";
 margin-top: 2rem;
 line-height: 10rem;
-}
 
-.flex-container div:hover {
-font-style: italic;
 }
 
 .titulorebelde {
@@ -215,9 +211,7 @@ font-style: italic;
 .flex-galerias:hover {
 
     filter: none;
-
 }
-
 
 
 .graphic {
