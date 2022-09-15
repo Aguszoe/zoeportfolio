@@ -1,0 +1,301 @@
+html {
+    font-size: 62,5%;
+}
+
+.grid-contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 70% 25%;
+    grid-template-areas:
+    "navegadorblack"
+    "contacto"
+    "footerblack";
+    background-color: #050400;
+}
+
+.flex-black {
+    color:#f8f7f2;
+    flex-wrap: wrap;
+    font-size: 5rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    grid-area: contacto;
+    word-spacing: 18rem;
+        
+}
+    
+.rebeldeemail {
+    font-size: 9rem;
+    text-decoration-line: underline;
+    text-align: end;
+    word-spacing: 10rem;
+    margin-top: 7rem;
+        
+}
+    
+
+body {
+    background-color: #f8f7f2;
+    font-family: "Public Sans";
+}
+
+
+.menuprincipal {
+    display: inline-block;
+    font-size: 1rem;
+    word-spacing: 11rem;
+    margin-left: 24rem;
+    margin-top: 2rem;
+    grid-area: navegador;
+}
+
+.menuprincipalnegro {
+    display: inline-block;
+    font-size: 1rem;
+    word-spacing: 11rem;
+    margin-left: 30rem;
+    margin-top: 2rem;
+    color: #f8f7f2;
+    text-decoration-line: none;
+    grid-area: navegadorblack;
+}
+
+.flex-titulo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: flex-end;
+    font-size: 4rem;
+    margin-top: 5rem;
+    word-spacing: 20rem;
+    margin-bottom: 2rem;
+    text-align: end;
+    margin-left: 40rem;
+    grid-area: titulo;
+}
+
+.flex-work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin-top: 4rem;
+    grid-area: work;
+}
+
+.flex-work div {
+    font-size: 2rem;
+    word-spacing: 5rem;
+}
+
+.flex-work:hover {
+
+    height: 300px;
+}
+
+img {
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+
+
+p {
+    font-size: 2rem;
+    margin-left: 3rem;
+    line-height: 3rem;
+    margin-top: 20rem;
+}
+
+.project {
+    font-style: normal;
+    font-size: 6rem;
+    color: black;
+    text-decoration: none;
+    margin-top: 20rem;
+    display:list-item
+}
+
+.project:hover {
+    font-style: italic;
+}
+
+.imagen {
+    margin-left: 47rem;
+    display: inline;
+    margin-top: 0rem;
+}
+
+
+.about {
+    font-size: 13rem;
+    word-spacing: 20rem;
+    margin-top: 6rem;
+    margin-left: 3rem;
+}
+
+.design {
+    margin-top: 10rem;
+}
+
+.derecha {
+    float: right;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    grid-area: presentacion;
+}
+
+.flex-container div {
+font-size: 5rem;
+word-spacing: 18rem;
+font-family: "Public Sans";
+margin-top: 2rem;
+line-height: 10rem;
+}
+
+.flex-container div:hover {
+font-style: italic;
+}
+
+.titulorebelde {
+    word-spacing: 41rem;
+}
+
+
+.flex-footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1rem;
+    grid-area: footer;
+    }
+
+.flex-footerblack {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1rem;
+        grid-area: footerblack;
+        color: #f8f7f2;
+        }
+
+.hijorebelde {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 5% 40% 50%;
+    grid-column-gap: 6rem;
+    grid-row-gap: 1rem;
+    grid-template-areas: 
+    "navegador"
+    "proyecto1"
+    "proyecto2"
+    "proyecto3"
+    "footer";
+}
+
+.flex-galerias {
+    display: flex;
+    flex-wrap: wrap;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.flex-galerias:hover {
+
+    filter: none;
+
+}
+
+
+
+.graphic {
+    font-size: 7rem;
+    position: absolute;
+    margin-left: 40rem;
+    grid-area: proyecto1;
+}
+
+.galeria2 {
+    margin-left: 60rem;
+    margin-top: 4rem;
+    grid-area: proyecto2;
+}
+
+.galeria {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    grid-area: proyecto1;
+}
+
+.galeria3 {
+    grid-area: proyecto3;
+}
+
+.ux {
+    grid-area: proyecto3;
+}
+
+.grid-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 80% 20%;
+    grid-template-areas: 
+    "navegador" 
+    "presentacion" 
+    "footer";
+}
+
+.grid-work {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 40% 40% 20%;
+    grid-template-areas:
+    "navegador"
+    "titulo"
+    "work"
+    "footer";
+}
+
+
+@media screen and (min-width: 390px) {
+       
+    .h1 {
+        font-size: 5rem;
+        word-spacing: 1rem;
+        line-height: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+
+    .grid-contact {
+        grid-template-rows: 5% 70% 5%;
+    }
+    
+    .flex-black {
+     font-size: 3rem;
+     word-spacing: 2rem;
+    }
+
+    .rebeldeemail {
+        font-size: 5rem;
+    }
+
+    .flex-footerblack {
+        line-height: 4rem;
+    }
+
+}
