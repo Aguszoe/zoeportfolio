@@ -2,62 +2,9 @@ html {
     font-size: 62,5%;
 }
 
-.grid-contact {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5% 70% 25%;
-    grid-template-areas:
-    "navegadorblack"
-    "contacto"
-    "footerblack";
-    background-color: #050400;
-}
-
-.flex-black {
-    color:#f8f7f2;
-    flex-wrap: wrap;
-    font-size: 5rem;
-    margin-top: 1rem;
-    margin-left: 2rem;
-    grid-area: contacto;
-    word-spacing: 18rem;
-        
-}
-    
-.rebeldeemail {
-    font-size: 9rem;
-    text-decoration-line: underline;
-    text-align: end;
-    word-spacing: 10rem;
-    margin-top: 7rem;
-        
-}
-    
-
 body {
     background-color: #f8f7f2;
     font-family: "Public Sans";
-}
-
-
-.menuprincipal {
-    display: inline-block;
-    font-size: 1rem;
-    word-spacing: 11rem;
-    margin-left: 24rem;
-    margin-top: 2rem;
-    grid-area: navegador;
-}
-
-.menuprincipalnegro {
-    display: inline-block;
-    font-size: 1rem;
-    word-spacing: 11rem;
-    margin-left: 30rem;
-    margin-top: 2rem;
-    color: #f8f7f2;
-    text-decoration-line: none;
-    grid-area: navegadorblack;
 }
 
 .flex-titulo {
@@ -87,9 +34,6 @@ body {
     word-spacing: 5rem;
 }
 
-.flex-work:hover {
-
-}
 
 img {
     margin-left: 3rem;
@@ -139,37 +83,6 @@ p {
     float: right;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    grid-area: presentacion;
-}
-
-.flex-container div {
-font-size: 5rem;
-word-spacing: 18rem;
-font-family: "Public Sans";
-margin-top: 2rem;
-line-height: 10rem;
-
-}
-
-.titulorebelde {
-    word-spacing: 41rem;
-}
-
-
-.flex-footer {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    text-align: center;
-    font-size: 1rem;
-    line-height: 1rem;
-    grid-area: footer;
-    }
 
 .flex-footerblack {
         display: flex;
@@ -241,14 +154,40 @@ line-height: 10rem;
     grid-area: proyecto3;
 }
 
-.grid-index {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5% 80% 20%;
-    grid-template-areas: 
-    "navegador" 
-    "presentacion" 
-    "footer";
+.tituloindex {
+
+   font-size: 10rem;
+   word-spacing: 20rem; 
+   font-family: "Public Sans";
+   margin-top: 4rem;
+}
+
+.tituloindex:hover {
+    font-style: italic;
+}
+
+.titulorebelde {
+    font-size: 11rem;
+    word-spacing: 34rem; 
+    padding-top: 5rem;
+}
+
+.nav-link {
+
+    font-size: 1rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+    color: rgb(114, 114, 114);
+}
+
+.nav-link:hover {
+
+    text-decoration: underline;
+}
+
+.footer {
+
+    padding-top: 5rem;
 }
 
 .grid-work {
@@ -262,6 +201,40 @@ line-height: 10rem;
     "footer";
 }
 
+.enlaces {
+
+    word-spacing: 4rem;
+    padding-top: 1rem;
+}
+
+.h2 {
+
+font-size: 1rem;
+padding-top: 2rem;
+}
+
+
+.email {
+    font-size: 9rem;
+    text-align: right;
+    position: relative;
+    padding-top: 18rem;
+    padding-bottom: 4rem;
+    animation-name: email1;
+    animation: scrolling 10s linear infinite;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes scrolling {
+    0% { transform: translateX(80vw);}
+    100% {transform: translateX(-180vw);}
+}
+
+.email:hover {
+    text-decoration: underline;
+}
 
 @media screen and (min-width: 390px) {
        
