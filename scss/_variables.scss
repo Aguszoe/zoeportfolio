@@ -1,0 +1,22 @@
+$colorprincipal: #f8f7f2;
+$colorsecundario: #000000; 
+$colorterciario: #727272;
+$colorespecial: #2345ef; 
+
+$estilos: (
+    color: #000000,
+    alineacion: center,
+    fuente: 4rem
+);
+
+$palette: (
+ 'colorprincipal': #f8f7f2,
+ 'colorsecundario': #000000,
+ 'colorterciario': #727272,
+ 'colorespecial': #2345ef
+ 
+);
+
+@mixin sizes ($fontsize){
+    font-size: $fontsize;
+}

@@ -1,63 +1,30 @@
-@import "index";
 @import "variables";
+@import "layout";
+@import "queries";
+
 
 html {
     font-size: 62,5%;
 }
 
 body {
-    background-color: #f8f7f2;
+    background-color: map-get($palette, colorprincipal);
     font-family: "Public Sans";
 }
 
 .contact {
-    background-color: #000000;
-}
-
-.flex-titulo {
-    display: flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    justify-content: flex-end;
-    font-size: 9rem;
-    margin-top: 5rem;
-    word-spacing: 20rem;
-    margin-bottom: 2rem;
-    text-align: end;
-    margin-left: 40rem;
-    grid-area: titulo;
-}
-
-.rowabout {
-margin-top: 17rem;
+    background-color: map-get($palette,colorsecundario);
 }
 
 .experiencia {
-    font-family: "Public Sans";
-    font-size: 9rem;
+    @include sizes (9rem)
     text-align: end;
     font-weight: 500;   
 }
 
 .experienciarebelde {
-    font-size: 5rem;
+    @include sizes (5rem)
 }
-
-.contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-top: 9rem;
-}
-
-.flex-work {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column;
-    margin-top: 4rem;
-    grid-area: work;
-}
-
 
 img {
     margin-left: 3rem;
@@ -66,15 +33,15 @@ img {
 
 
 p {
-    font-size: 2rem;
+    @include sizes (2rem)
     margin-left: 3rem;
     line-height: 1.5rem;
 }
 
 .project {
     font-style: normal;
-    font-size: 6rem;
-    color: black;
+    @include sizes (6rem)
+    color: map-get($palette,colorsecundario);
     text-decoration: none;
     margin-top: 20rem;
     display:list-item
@@ -92,14 +59,14 @@ p {
 
 
 .about {
-    font-size: 13rem;
+    @include sizes (13rem)
     word-spacing: 20rem;
     margin-top: 6rem;
     margin-left: 3rem;
 }
 
 .about2 {
-    font-size: 10rem;
+    @include sizes (10rem)
     margin-top: 6rem;
     text-align: center;
 }
@@ -113,89 +80,19 @@ p {
 }
 
 
-.flex-footerblack {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        text-align: center;
-        font-size: 1rem;
-        line-height: 1rem;
-        grid-area: footerblack;
-        color: #f8f7f2;
-        }
-
-.hijorebelde {
-    font-size: 3rem;
-    text-align: center;
-}
-
-.grid-projects {
-    display: grid;
-    grid-template-columns: 2fr;
-    grid-template-rows: 5% 40% 50%;
-    grid-column-gap: 6rem;
-    grid-row-gap: 1rem;
-    grid-template-areas: 
-    "navegador"
-    "proyecto1"
-    "proyecto2"
-    "proyecto3"
-    "footer";
-}
-
-.flex-galerias {
-    display: flex;
-    flex-wrap: wrap;
-    filter: grayscale(100%);
-    transition: all 1s;
-}
-
-.flex-galerias:hover {
-
-    filter: none;
-}
-
-
-.graphic {
-    font-size: 7rem;
-    position: absolute;
-    margin-left: 40rem;
-    grid-area: proyecto1;
-}
-
-.galeria2 {
-    margin-left: 60rem;
-    margin-top: 7rem;
-    grid-area: proyecto2;
-}
-
-.galeria {
-    margin-top: 1rem;
-    margin-left: 4rem;
-    grid-area: proyecto1;
-}
-
-.galeria3 {
-    grid-area: proyecto3;
-}
-
-.ux {
-    grid-area: proyecto3;
-}
-
 .tituloindex {
-   font-size: 4rem;
+    @include sizes (4rem)
    margin-top: 3rem;
 
 }
 
 .tituloindex2 {
-    font-size: 3rem;
+    @include sizes (3rem)
     margin-top: 2rem;
 }
 
 .titulorebelde {
-    font-size: 5rem;
+    @include sizes (5rem)
     margin-top: 5rem;
 }
 
@@ -206,10 +103,10 @@ p {
 
 .nav-link {
 
-    font-size: 1rem;
+    @include sizes (1rem)
     margin-top: 2rem;
     margin-left: 3rem;
-    color: rgb(114, 114, 114);
+    color: map-get($palette,colorterciario);
     &:hover {
     
         text-decoration: underline;
@@ -223,39 +120,34 @@ p {
 }
 
 .footerrebelde {
-    color: #ffffff;
+    color: map-get( $palette, colorprincipal);
     margin-top: 25rem;
-}
-
-.grid-work {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5% 40% 40% 20%;
-    grid-template-areas:
-    "navegador"
-    "titulo"
-    "work"
-    "footer";
 }
 
 .enlaces {
 
     word-spacing: 4rem;
     padding-top: 1rem;
-    color: #f8f7f2;
+    color: map-get($palette,colorprincipal);
     text-decoration: none;
 }
 
 .h2 {
 
-font-size: 1rem;
+@include sizes (1rem)
 padding-top: 2rem;
 }
 
+.h3 {
+
+    @extend .h2;
+    color: map-get($palette,colorprincipal);
+    }
+
 
 .email {
-    font-size: 6rem;
-    color: #f8f7f2;
+    @include sizes (6rem)
+    color: map-get($palette,colorprincipal);
     margin-top: 5rem;
     &:hover {
         text-decoration: underline;
@@ -263,41 +155,11 @@ padding-top: 2rem;
 }
 
 .titulocontacto {
-
-    font-size: 2rem; 
-    font-family: "Public Sans";
+    @include sizes (2rem)
+    color: map-get($palette,colorprincipal);
     margin-top: 18rem;
-    color: #f8f7f2;
   }
 
+  
 
-@media screen and (min-width: 390px) {
-       
-    .h1 {
-        font-size: 5rem;
-        word-spacing: 1rem;
-        line-height: 1rem;
-    }
-}
-
-
-@media screen and (max-width: 390px) {
-
-    .grid-contact {
-        grid-template-rows: 5% 70% 5%;
-    }
     
-    .flex-black {
-     font-size: 3rem;
-     word-spacing: 2rem;
-    }
-
-    .rebeldeemail {
-        font-size: 5rem;
-    }
-
-    .flex-footerblack {
-        line-height: 4rem;
-    }
-
-}
