@@ -10,12 +10,16 @@ body {
     font-family: "Public Sans";
 }
 
+.contact {
+    background-color: #000000;
+}
+
 .flex-titulo {
     display: flex;
     flex-direction: column;
     flex-wrap:wrap;
     justify-content: flex-end;
-    font-size: 4rem;
+    font-size: 9rem;
     margin-top: 5rem;
     word-spacing: 20rem;
     margin-bottom: 2rem;
@@ -24,17 +28,34 @@ body {
     grid-area: titulo;
 }
 
+.rowabout {
+margin-top: 17rem;
+}
+
+.experiencia {
+    font-family: "Public Sans";
+    font-size: 9rem;
+    text-align: end;
+    font-weight: 500;   
+}
+
+.experienciarebelde {
+    font-size: 5rem;
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 9rem;
+}
+
 .flex-work {
     display: flex;
     flex-wrap: wrap;
     flex-direction:column;
     margin-top: 4rem;
     grid-area: work;
-}
-
-.flex-work div {
-    font-size: 2rem;
-    word-spacing: 5rem;
 }
 
 
@@ -47,8 +68,7 @@ img {
 p {
     font-size: 2rem;
     margin-left: 3rem;
-    line-height: 3rem;
-    margin-top: 20rem;
+    line-height: 1.5rem;
 }
 
 .project {
@@ -76,6 +96,12 @@ p {
     word-spacing: 20rem;
     margin-top: 6rem;
     margin-left: 3rem;
+}
+
+.about2 {
+    font-size: 10rem;
+    margin-top: 6rem;
+    text-align: center;
 }
 
 .design {
@@ -139,7 +165,7 @@ p {
 
 .galeria2 {
     margin-left: 60rem;
-    margin-top: 4rem;
+    margin-top: 7rem;
     grid-area: proyecto2;
 }
 
@@ -158,22 +184,24 @@ p {
 }
 
 .tituloindex {
-
-   font-size: 10rem;
-   word-spacing: 20rem; 
-   font-family: "Public Sans";
-   margin-top: 4rem;
-    :hover {
-       font-style: italic;
-    }
+   font-size: 4rem;
+   margin-top: 3rem;
 
 }
 
+.tituloindex2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
 
 .titulorebelde {
-    font-size: 11rem;
-    word-spacing: 34rem; 
-    padding-top: 5rem;
+    font-size: 5rem;
+    margin-top: 5rem;
+}
+
+.star {
+    margin-top: 1rem;
+    margin-left: 30rem;
 }
 
 .nav-link {
@@ -182,7 +210,7 @@ p {
     margin-top: 2rem;
     margin-left: 3rem;
     color: rgb(114, 114, 114);
-    :hover {
+    &:hover {
     
         text-decoration: underline;
     }
@@ -192,6 +220,11 @@ p {
 .footer {
 
     padding-top: 5rem;
+}
+
+.footerrebelde {
+    color: #ffffff;
+    margin-top: 25rem;
 }
 
 .grid-work {
@@ -209,6 +242,8 @@ p {
 
     word-spacing: 4rem;
     padding-top: 1rem;
+    color: #f8f7f2;
+    text-decoration: none;
 }
 
 .h2 {
@@ -219,34 +254,22 @@ padding-top: 2rem;
 
 
 .email {
-    font-size: 9rem;
-    text-align: right;
-    position: relative;
-    padding-top: 18rem;
-    padding-bottom: 4rem;
-    animation-name: email1;
-    animation: scrolling 10s linear infinite;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-
+    font-size: 6rem;
+    color: #f8f7f2;
+    margin-top: 5rem;
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .titulocontacto {
 
-    font-size: 10rem;
-    word-spacing: 20rem; 
+    font-size: 2rem; 
     font-family: "Public Sans";
-    margin-top: 6rem;
+    margin-top: 18rem;
+    color: #f8f7f2;
   }
 
-@keyframes scrolling {
-    0% { transform: translateX(80vw);}
-    100% {transform: translateX(-180vw);}
-}
-
-.email:hover {
-    text-decoration: underline;
-}
 
 @media screen and (min-width: 390px) {
        
