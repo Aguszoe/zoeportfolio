@@ -37,55 +37,20 @@ font-size: 3rem;
 text-align: center;
 }
 
-.grid-projects {
-display: grid;
-grid-template-columns: 2fr;
-grid-template-rows: 5% 40% 50%;
-grid-column-gap: 6rem;
-grid-row-gap: 1rem;
-grid-template-areas: 
-"navegador"
-"proyecto1"
-"proyecto2"
-"proyecto3"
-"footer";
-}
 
-.flex-galerias {
+.row2 {
 display: flex;
 flex-wrap: wrap;
-filter: grayscale(100%);
+padding: 5rem;
+margin-top: 3rem;
 transition: all 1s;
 }
 
-.flex-galerias:hover {
+.row2:hover {
 
-filter: none;
+filter: grayscale(100%);
 }
 
-
-.graphic {
-    font-size: 7rem;
-    position: absolute;
-    margin-left: 40rem;
-    grid-area: proyecto1;
-}
-
-.galeria2 {
-    margin-left: 60rem;
-    margin-top: 7rem;
-    grid-area: proyecto2;
-}
-
-.galeria {
-    margin-top: 1rem;
-    margin-left: 4rem;
-    grid-area: proyecto1;
-}
-
-.galeria3 {
-    grid-area: proyecto3;
-}
 
 .ux {
     grid-area: proyecto3;

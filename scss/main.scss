@@ -8,16 +8,20 @@ html {
 }
 
 body {
-    background-color: map-get($palette, colorprincipal);
+    background-color: $colorprincipal;
     font-family: "Public Sans";
 }
 
 .contact {
-    background-color: map-get($palette,colorsecundario);
+    background-color: $colorprincipal;
+}
+
+.star {
+    margin-right: 5rem;
 }
 
 .experiencia {
-    @include sizes (9rem)
+    @include sizes (9rem);
     text-align: end;
     font-weight: 500;   
 }
@@ -33,15 +37,15 @@ img {
 
 
 p {
-    @include sizes (2rem)
+    @include sizes (2rem);
     margin-left: 3rem;
     line-height: 1.5rem;
 }
 
 .project {
     font-style: normal;
-    @include sizes (6rem)
-    color: map-get($palette,colorsecundario);
+    @include sizes (6rem);
+    color: $colorsecundario;
     text-decoration: none;
     margin-top: 20rem;
     display:list-item
@@ -59,14 +63,14 @@ p {
 
 
 .about {
-    @include sizes (13rem)
+    @include sizes (13rem);
     word-spacing: 20rem;
     margin-top: 6rem;
     margin-left: 3rem;
 }
 
 .about2 {
-    @include sizes (10rem)
+    @include sizes (10rem);
     margin-top: 6rem;
     text-align: center;
 }
@@ -81,32 +85,30 @@ p {
 
 
 .tituloindex {
-    @include sizes (4rem)
+    @include sizes (4rem);
    margin-top: 3rem;
+   color: $colorterciario;
 
 }
 
 .tituloindex2 {
-    @include sizes (3rem)
+    @include sizes (3rem);
     margin-top: 2rem;
+    color: $colorsecundario;
 }
 
 .titulorebelde {
-    @include sizes (5rem)
+    @include sizes (5rem);
     margin-top: 5rem;
-}
-
-.star {
-    margin-top: 1rem;
-    margin-left: 30rem;
+    color: $colorsecundario;
 }
 
 .nav-link {
 
-    @include sizes (1rem)
+    @include sizes (1rem);
     margin-top: 2rem;
     margin-left: 3rem;
-    color: map-get($palette,colorterciario);
+    color: $colorterciario;
     &:hover {
     
         text-decoration: underline;
@@ -120,7 +122,7 @@ p {
 }
 
 .footerrebelde {
-    color: map-get( $palette, colorprincipal);
+    color: $colorprincipal;
     margin-top: 25rem;
 }
 
@@ -128,38 +130,41 @@ p {
 
     word-spacing: 4rem;
     padding-top: 1rem;
-    color: map-get($palette,colorprincipal);
+    color: $colorprincipal;
     text-decoration: none;
 }
 
 .h2 {
 
-@include sizes (1rem)
+@include sizes (1rem);
 padding-top: 2rem;
 }
 
 .h3 {
 
     @extend .h2;
-    color: map-get($palette,colorprincipal);
+    color: $colorprincipal;
     }
 
 
 .email {
-    @include sizes (6rem)
-    color: map-get($palette,colorprincipal);
+    @include sizes (6rem);
+    color: $colorterciario;
     margin-top: 5rem;
+    text-decoration: none;
     &:hover {
         text-decoration: underline;
     }
 }
 
 .titulocontacto {
-    @include sizes (2rem)
-    color: map-get($palette,colorprincipal);
+    @include sizes (2rem);
+    color: $colorterciario;
     margin-top: 18rem;
   }
 
-  
+.linea {
+    color: $colorsecundario;
+}
 
     

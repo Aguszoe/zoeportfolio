@@ -31,41 +31,15 @@
   font-size: 3rem;
   text-align: center; }
 
-.grid-projects {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 5% 40% 50%;
-  grid-column-gap: 6rem;
-  grid-row-gap: 1rem;
-  grid-template-areas: "navegador" "proyecto1" "proyecto2" "proyecto3" "footer"; }
-
-.flex-galerias {
+.row2 {
   display: flex;
   flex-wrap: wrap;
-  filter: grayscale(100%);
+  padding: 5rem;
+  margin-top: 3rem;
   transition: all 1s; }
 
-.flex-galerias:hover {
-  filter: none; }
-
-.graphic {
-  font-size: 7rem;
-  position: absolute;
-  margin-left: 40rem;
-  grid-area: proyecto1; }
-
-.galeria2 {
-  margin-left: 60rem;
-  margin-top: 7rem;
-  grid-area: proyecto2; }
-
-.galeria {
-  margin-top: 1rem;
-  margin-left: 4rem;
-  grid-area: proyecto1; }
-
-.galeria3 {
-  grid-area: proyecto3; }
+.row2:hover {
+  filter: grayscale(100%); }
 
 .ux {
   grid-area: proyecto3; }
@@ -99,11 +73,14 @@ html {
   font-size: 62,5%; }
 
 body {
-  background-color: #f8f7f2;
+  background-color: #F8F8F5;
   font-family: "Public Sans"; }
 
 .contact {
-  background-color: #000000; }
+  background-color: #F8F8F5; }
+
+.star {
+  margin-right: 5rem; }
 
 .experiencia {
   font-size: 9rem;
@@ -125,7 +102,7 @@ p {
 .project {
   font-style: normal;
   font-size: 6rem;
-  color: #000000;
+  color: #2345ef;
   text-decoration: none;
   margin-top: 20rem; }
   .project display:list-item :hover {
@@ -155,25 +132,24 @@ p {
 
 .tituloindex {
   font-size: 4rem;
-  margin-top: 3rem; }
+  margin-top: 3rem;
+  color: #000000; }
 
 .tituloindex2 {
   font-size: 3rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+  color: #2345ef; }
 
 .titulorebelde {
   font-size: 5rem;
-  margin-top: 5rem; }
-
-.star {
-  margin-top: 1rem;
-  margin-left: 30rem; }
+  margin-top: 5rem;
+  color: #2345ef; }
 
 .nav-link {
   font-size: 1rem;
   margin-top: 2rem;
   margin-left: 3rem;
-  color: #727272; }
+  color: #000000; }
   .nav-link:hover {
     text-decoration: underline; }
 
@@ -181,13 +157,13 @@ p {
   padding-top: 5rem; }
 
 .footerrebelde {
-  color: #f8f7f2;
+  color: #F8F8F5;
   margin-top: 25rem; }
 
 .enlaces {
   word-spacing: 4rem;
   padding-top: 1rem;
-  color: #f8f7f2;
+  color: #F8F8F5;
   text-decoration: none; }
 
 .h2, .h3 {
@@ -195,16 +171,20 @@ p {
   padding-top: 2rem; }
 
 .h3 {
-  color: #f8f7f2; }
+  color: #F8F8F5; }
 
 .email {
   font-size: 6rem;
-  color: #f8f7f2;
-  margin-top: 5rem; }
+  color: #000000;
+  margin-top: 5rem;
+  text-decoration: none; }
   .email:hover {
     text-decoration: underline; }
 
 .titulocontacto {
   font-size: 2rem;
-  color: #f8f7f2;
+  color: #000000;
   margin-top: 18rem; }
+
+.linea {
+  color: #2345ef; }
