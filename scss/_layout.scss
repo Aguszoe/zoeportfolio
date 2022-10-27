@@ -2,7 +2,7 @@
 .flex-titulo {
     display: flex;
     flex-direction: column;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: flex-end;
     font-size: 9rem;
     margin-top: 5rem;
@@ -14,7 +14,8 @@
 }
 
 .rowabout {
-margin-top: 17rem;
+    margin-top: 7rem;
+    padding: 1rem;
 }
 
 .contenedor {
@@ -22,35 +23,71 @@ margin-top: 17rem;
     flex-wrap: wrap;
     flex-direction: column;
     margin-top: 9rem;
+    color: $colorsecundario;
 }
 
 .flex-work {
     display: flex;
     flex-wrap: wrap;
-    flex-direction:column;
+    flex-direction: column;
     margin-top: 4rem;
     grid-area: work;
 }
 
 .hijorebelde {
-font-size: 3rem;
-text-align: center;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 5% 40% 50%;
+    grid-column-gap: 6rem;
+    grid-row-gap: 1rem;
+    grid-template-areas:
+        "navegador"
+        "proyecto1"
+        "proyecto2"
+        "proyecto3"
+        "footer";
+}
+
+.flex-galerias {
+    display: flex;
+    flex-wrap: wrap;
+    filter: grayscale(100%);
+    transition: all 1s;
+}
+
+.flex-galerias:hover {
+
+    filter: none;
 }
 
 
-.row2 {
-display: flex;
-flex-wrap: wrap;
-padding: 5rem;
-margin-top: 3rem;
-transition: all 1s;
+.graphic {
+    font-size: 7rem;
+    position: absolute;
+    margin-left: 40rem;
+    grid-area: proyecto1;
 }
 
-.row2:hover {
-
-filter: grayscale(100%);
+.galeria2 {
+    margin-left: 60rem;
+    margin-top: 7rem;
+    grid-area: proyecto2;
 }
 
+.galeria {
+    margin-top: 1rem;
+    margin-left: 4rem;
+    grid-area: proyecto1;
+}
+
+.galeria3 {
+    grid-area: proyecto3;
+}
 
 .ux {
     grid-area: proyecto3;
@@ -62,18 +99,19 @@ filter: grayscale(100%);
     grid-template-columns: 1fr;
     grid-template-rows: 5% 40% 40% 20%;
     grid-template-areas:
-    "navegador"
-    "titulo"
-    "work"
-    "footer";
+        "navegador"
+        "titulo"
+        "work"
+        "footer";
 }
+
 .grid-contact {
     grid-template-rows: 5% 70% 5%;
 }
 
 .flex-black {
- font-size: 3rem;
- word-spacing: 2rem;
+    font-size: 3rem;
+    word-spacing: 2rem;
 }
 
 .rebeldeemail {
@@ -82,4 +120,112 @@ filter: grayscale(100%);
 
 .flex-footerblack {
     line-height: 4rem;
+}
+
+.carousel-item img{
+    object-fit: cover;
+}
+
+.column{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*----------------FLIP CARDS----------------*/
+
+.container_galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+.flip-card-container {
+    padding: 20px;
+	width: 400px;
+	height: 400px;
+	perspective: 1000px;
+}
+.flip-card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 1000ms;
+	transform-style: preserve-3d;
+}
+.flip-card-container:hover .flip-card {
+	transform: rotateY(180deg);
+}
+
+/*--------------- Posición ---------------*/
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+.flip-card-front {
+	background-color: #333;
+}
+.flip-card-back {
+    //el color del backgroun es el secundario
+    background-color: $colorterciario;
+	transform: rotateY(180deg);
+    //centro el contenido en los dos ejes
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: $colorprincipal;
+        font-size: 3rem !important;
+        text-align: center;
+    }
+    a{
+        text-decoration: none;
+        color: $colorprincipal;
+        font-size: 2rem;
+        font-weight: 300;
+        margin-top: 1rem;
+        //efecto botón
+        padding: 1rem 2rem;
+        border: 1px solid $colorprincipal;
+        border-radius: 5px;
+        transition: all 0.5s;
+        &:hover{
+            background-color: $colorprincipal;
+            color: $colorterciario;
+        }
+    }
+}
+
+.flip-card-front img {
+    object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.flip-card-back p {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 10px;
+}
+.flip-card-back a {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+	line-height: 25px;
+	display: inline-block;
 }

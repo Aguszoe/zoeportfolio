@@ -4,63 +4,83 @@
 
 
 html {
-    font-size: 62,5%;
+    font-size: 62, 5%;
 }
 
 body {
-    background-color: $colorprincipal;
+    background-color: map-get($palette, colorprincipal);
     font-family: "Public Sans";
 }
 
-.contact {
-    background-color: $colorprincipal;
-}
-
-.star {
-    margin-right: 5rem;
+.container-fluid {
+    padding: 5px 30px;
 }
 
 .experiencia {
     @include sizes (9rem);
     text-align: end;
-    font-weight: 500;   
+    font-weight: 500;
+}
+
+.h1_sections {
+    @include sizes (4rem);
+    text-align: center;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 4rem;
 }
 
 .experienciarebelde {
     @include sizes (5rem)
 }
 
-img {
-    margin-left: 3rem;
-    margin-top: 5rem;
+.star {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: $colorprincipal;
+    background-color: $colorsecundario;
+    //color de fondo para que parezca botón
+    padding: 0.6rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+
+    //hover
+    &:hover {
+        background-color: lighten($colorsecundario, 20%);
+        color: $colorprincipal;
+    }
 }
 
 
 p {
     @include sizes (2rem);
-    margin-left: 3rem;
-    line-height: 1.5rem;
+    line-height: 2.7rem;
 }
 
 .project {
     font-style: normal;
     @include sizes (6rem);
-    color: $colorsecundario;
+    color: map-get($palette, colorsecundario);
     text-decoration: none;
     margin-top: 20rem;
-    display:list-item
-    :hover {
+
+    display:list-item :hover {
         font-style: italic;
     }
 }
-
 
 .imagen {
     margin-left: 47rem;
     display: inline;
     margin-top: 0rem;
 }
-
 
 .about {
     @include sizes (13rem);
@@ -83,24 +103,21 @@ p {
     float: right;
 }
 
-
 .tituloindex {
     @include sizes (4rem);
-   margin-top: 3rem;
-   color: $colorterciario;
-
+    margin-top: 3rem;
 }
 
 .tituloindex2 {
     @include sizes (3rem);
     margin-top: 2rem;
-    color: $colorsecundario;
+    margin-top: 2rem
 }
 
 .titulorebelde {
     @include sizes (5rem);
     margin-top: 5rem;
-    color: $colorsecundario;
+    margin-bottom: 3rem;
 }
 
 .nav-link {
@@ -108,21 +125,27 @@ p {
     @include sizes (1rem);
     margin-top: 2rem;
     margin-left: 3rem;
-    color: $colorterciario;
+    color: map-get($palette, colorterciario);
     &:hover {
-    
         text-decoration: underline;
     }
 }
 
+footer {
+    padding-top: 2rem;
+    bottom: 0px;
+    margin-bottom: 3rem;
 
-.footer {
-
-    padding-top: 5rem;
+    p {
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin: 0;
+        margin-bottom: 20px;
+    }
 }
 
 .footerrebelde {
-    color: $colorprincipal;
+    color: map-get($palette, colorprincipal);
     margin-top: 25rem;
 }
 
@@ -130,28 +153,29 @@ p {
 
     word-spacing: 4rem;
     padding-top: 1rem;
-    color: $colorprincipal;
+    color: map-get($palette, colorprincipal);
     text-decoration: none;
 }
 
 .h2 {
 
-@include sizes (1rem);
-padding-top: 2rem;
+    @include sizes (1rem);
+    padding-top: 2rem;
 }
 
 .h3 {
 
     @extend .h2;
-    color: $colorprincipal;
-    }
+    color: map-get($palette, colorprincipal);
+}
 
 
 .email {
-    @include sizes (6rem);
-    color: $colorterciario;
+    @include sizes (3rem);
+    color: map-get($palette, colorsecundario);
     margin-top: 5rem;
-    text-decoration: none;
+    margin-bottom: 10rem;
+
     &:hover {
         text-decoration: underline;
     }
@@ -159,12 +183,73 @@ padding-top: 2rem;
 
 .titulocontacto {
     @include sizes (2rem);
-    color: $colorterciario;
+    color: map-get($palette, colorsecundario);
     margin-top: 18rem;
-  }
-
-.linea {
-    color: $colorsecundario;
 }
+
+
+//Animación
+.text {
+    font-size: 22px;
+    //color primario
+    color: map-get($palette, colorespecial);
+    text-align: center;
+}
+
+.parpadea {
+
+    animation-name: parpadeo;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-name: parpadeo;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@-webkit-keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1.0;
+    }
+
+    50% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
 
     

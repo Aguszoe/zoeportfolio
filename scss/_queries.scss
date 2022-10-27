@@ -1,8 +1,100 @@
+//media queries
+@media screen and (max-width: 768px) {
 
-@media screen and (min-width: 390px) {  
-    .h1 {
-        font-size: 5rem;
-        word-spacing: 1rem;
-        line-height: 1rem;
+    //la estrella va a ocupar el 90% de la pantalla
+    .star {
+        margin: 0;
+        padding: 0;
+
+        //la imagen no va a tener margenes
+        img {
+            width: 90vw;
+            height: auto;
+            margin-left: 5px;
+            margin-top: 2px;
+        }
+    }
+
+    .about {
+        margin-left: 0rem;
+    }
+    .about2 {
+        margin-left: 0rem;
+    }
+    .project {
+        margin-top: 0rem;
+    }
+    .experiencia {
+        text-align: center;
+    }
+    .experienciarebelde {
+        text-align: center;
+    }
+    .star {
+        margin-left: 0rem;
+    }
+    .footer {
+        padding-top: 0rem;
+    }
+    .footerrebelde {
+        margin-top: 0rem;
+    }
+    .email {
+        margin-top: 0rem;
+        //efecto botón
+        padding: 1rem 2rem;
+        border: 1px solid $colorsecundario;
+        border-radius: 5px;
+        font-size: 1.4rem !important;
+    }
+    .titulocontacto {
+        margin-top: 0rem;
+    }
+    .contact {
+        margin-top: 0rem;
+    }
+    .derecha {
+        float: none;
+    }
+    .design {
+        margin-top: 0rem;
+    }
+    .tituloindex {
+        margin-top: 0rem;
+        font-size: 3rem;
+    }
+    .tituloindex2 {
+        margin: 1.5rem 0;
+        font-size: 2rem !important;
+    }
+    .titulorebelde  {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+    }
+    .nav-link {
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+    .h2 {
+        padding-top: 0rem;
+    }
+    .h3 {
+        padding-top: 0rem;
+    }
+    .enlaces {
+        padding-top: 0rem;
+        margin: 2rem;
+    }
+
+    footer .row{
+        height: auto;
+    }
+
+    .h1_sections {
+        font-size: 3rem !important;
+    }
+
+    .container_galeria{
+        margin-top: 0rem;
     }
 }
