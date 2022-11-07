@@ -174,11 +174,11 @@
 	border-radius: 10px;
 }
 .flip-card-front {
-	background-color: #333;
+	background-color: #EFACE2;
 }
 .flip-card-back {
     //el color del backgroun es el secundario
-    background-color: $colorterciario;
+    background-color: $colorrosa;
 	transform: rotateY(180deg);
     //centro el contenido en los dos ejes
     display: flex;
@@ -187,19 +187,19 @@
     align-items: center;
 
     p{
-        color: $colorprincipal;
+        color: $colorespecial;
         font-size: 3rem !important;
         text-align: center;
     }
     a{
         text-decoration: none;
-        color: $colorprincipal;
+        color: $colorespecial;
         font-size: 2rem;
         font-weight: 300;
         margin-top: 1rem;
         //efecto botón
         padding: 1rem 2rem;
-        border: 1px solid $colorprincipal;
+        border: 1px solid $colorespecial;
         border-radius: 5px;
         transition: all 0.5s;
         &:hover{
@@ -213,7 +213,6 @@
     object-fit: cover;
 	width: 100%;
 	height: 100%;
-	border-radius: 10px;
 }
 
 .flip-card-back p {
