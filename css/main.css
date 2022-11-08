@@ -258,11 +258,6 @@ html {
   overflow-x: hidden;
   margin: 0; }
 
-.bodycontact {
-  background-color: #EFACE2;
-  font-family: "Public Sans";
-  margin: 0; }
-
 .body23 {
   height: 100vh;
   background: linear-gradient(to bottom, #F8F8F5 0%, #F8F8F5 50%, #2345ef 50%, #2345ef 100%); }
